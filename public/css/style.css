@@ -1,0 +1,137 @@
+/*font face*/
+@font-face {
+    font-family: 'Maiandra';
+    src: url('../fonts/Maiandra/MaiandraGD.eot');
+    src: url('../fonts/Maiandra/MaiandraGD.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Maiandra/MaiandraGD.woff2') format('woff2'),
+    url('../fonts/Maiandra/MaiandraGD.woff') format('woff'),
+    url('../fonts/Maiandra/MaiandraGD.ttf') format('truetype'),
+    url('../fonts/Maiandra/MaiandraGD.svg#neotericregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-color: #cecccc;
+}
+
+.box{
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: rgba(255,255,255,0.9);
+}
+
+/*Estilos propios*/
+
+header
+{
+    background-image: url("../images/fondoHeader.jpg");
+    height: 165px;
+}
+
+#headerLine{
+    border-bottom: 8px solid rgb(0, 150, 204);
+    margin-bottom: 40px;
+}
+
+
+#logo
+{
+    padding-top: 80px;
+    padding-bottom:20px;
+    background-image:url(../images/logo_getronics.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+#derecha
+{
+    padding-top:120px;
+    padding-bottom:20px;
+    width: 20%;
+    background-image:url(../images/derecha.png);
+    float: right;
+    background-repeat:no-repeat;
+    background-position: right;
+}
+
+#izquierda
+{
+    padding-top: 140px;
+    width: 20%;
+    background-image:url(../images/izquierda.png);
+    float: left;
+    background-repeat:no-repeat;
+    background-position: left;
+}
+
+#titulo
+{
+    font-family: 'Maiandra';
+    color:white;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+#panelInicioSesion
+{
+    margin-top: 10px;
+    font-family: 'Maiandra';
+    text-align: center;
+}
+
+#formularioInicioSesion
+{
+    margin-top: 20px;
+}
+
+#btnLogin
+{
+    margin-top: 30px;
+    font-family: 'Maiandra';
+}
+
+
+/* media screen*/
+
+@media(max-width:600px){
+    #izquierda
+    {
+        visibility: hidden;
+    }
+
+    #derecha{
+        visibility: hidden;
+    }
+}
+
+
+@media(max-width:991px){
+    .box{
+        height: 730px;
+    }
+}
+
+
+@media(max-width:1199px){
+    .box{
+        height: 380px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .box:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+
+
+
